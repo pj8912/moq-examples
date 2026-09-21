@@ -1,0 +1,19 @@
+[project]
+name = "moq-python"
+version = "0.1.0"
+description = "Python MOQ examples"
+readme = "README.md"
+authors = [
+    { name = "pj8912"}
+]
+requires-python = ">=3.12"
+dependencies = [
+    "moq-rs>=0.4.7",
+]
+
+[project.scripts]
+moq-python = "moq_python:main"
+
+[build-system]
+requires = ["uv_build>=0.12.17,<0.13.0"]
+build-backend = "uv_build"
